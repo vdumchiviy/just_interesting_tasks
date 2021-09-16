@@ -30,8 +30,8 @@ import copy
 import queue
 
 
-class Stack1():
-    """class realize simple construction of stack using bulit-in type List
+class Stack_with_List():
+    """class realizes simple construction of stack using bulit-in type List
     """
 
     def __init__(self) -> None:
@@ -108,6 +108,11 @@ class Stack_with_wrapper():
         return self.st[index]
 
 
+
+
+
+
+####
 def raise_if_stack_empty(inner_method):
     def wrapper(self,  *args):
         if self.st.empty():
@@ -122,9 +127,6 @@ def raise_if_out_of_index(inner_method):
             raise Exception(f'element with index {index} is absent')
         return inner_method(self, index)
     return wrapper
-
-####
-
 
 class Stack_with_wrapper_and_queue():
     """class realize stack using wrapping and Lifoqueue instead of built-in type List
