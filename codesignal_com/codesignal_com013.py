@@ -31,6 +31,7 @@ Given a rectangular matrix of characters, add a border of asterisks(*) to it.
 
 Example
 
+
 For
 
 picture = ["abc",
@@ -72,6 +73,6 @@ picture = ["abc",
            "ded"]
 
 assert solution(picture) == ["*****",
-                            "*abc*",
-                            "*ded*",
-                            "*****"]
+                             "*abc*",
+                             "*ded*",
+                             "*****"]
