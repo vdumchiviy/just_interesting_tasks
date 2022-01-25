@@ -67,3 +67,4 @@ assert solution(["ab",
                  "ad",
                  "ef",
                  "eg"]) is False
+print(solution.MRO)
